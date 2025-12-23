@@ -1,0 +1,6 @@
+annual_income,debt_to_income_ratio,credit_score,loan_amount,interest_rate,gender,marital_status,education_level,employment_status,loan_purpose,grade_subgrade
+45000,0.12,680,12000,11.5,Male,Married,Master's,Employed,Debt consolidation,B2
+60000,0.20,720,15000,10.2,Female,Single,Bachelor,Employed,Home,A4
+30000,0.35,610,8000,14.8,Male,Single,High School,Unemployed,Medical,D3
+52000,0.18,700,10000,9.9,Female,Married,Master's,Self-employed,Car,B1
+28000,0.40,590,6000,16.2,Male,Single,High School,Unemployed,Medical,E2

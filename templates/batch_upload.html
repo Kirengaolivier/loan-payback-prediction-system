@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Batch Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Batch Loan Payback Prediction</h2>
+
+    <form action="/batch_predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".csv" required>
+        <br><br>
+        <button type="submit">Upload & Predict</button>
+    </form>
+
+    <br>
+    <a href="/" class="history-btn">Back to Single Prediction</a>
+</div>
+
+</body>
+</html>

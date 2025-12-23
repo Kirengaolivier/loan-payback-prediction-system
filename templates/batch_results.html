@@ -1,0 +1,26 @@
+<h2>Batch Prediction Results</h2>
+
+<table border="1">
+  <tr>
+    <th>Annual Income</th>
+    <th>Credit Score</th>
+    <th>Loan Amount</th>
+    <th>Loan Purpose</th>
+    <th>Prediction</th>
+    <th>Probability</th>
+  </tr>
+
+  {% for row in results %}
+  <tr>
+    <td>{{ row.annual_income }}</td>
+    <td>{{ row.credit_score }}</td>
+    <td>{{ row.loan_amount }}</td>
+    <td>{{ row.loan_purpose }}</td>
+    <td>{{ row.prediction }}</td>
+    <td>{{ row.probability }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+<br>
+<a href="/" class="btn btn-primary">Back to Prediction</a>

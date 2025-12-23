@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction History</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Prediction History</h2>
+
+    {% if records %}
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Income</th>
+            <th>DTI</th>
+            <th>Credit Score</th>
+            <th>Loan Amount</th>
+            <th>Purpose</th>
+            <th>Grade</th>
+            <th>Prediction</th>
+            <th>Probability</th>
+        </tr>
+
+        {% for r in records %}
+        <tr>
+            <td>{{ r.timestamp.split("T")[0] }}</td>
+            <td>{{ r.annual_income }}</td>
+            <td>{{ r.debt_to_income_ratio }}</td>
+            <td>{{ r.credit_score }}</td>
+            <td>{{ r.loan_amount }}</td>
+            <td>{{ r.loan_purpose }}</td>
+            <td>{{ r.grade_subgrade }}</td>
+            <td><strong>{{ r.prediction }}</strong></td>
+            <td>{{ (r.probability * 100) | round(2) }}%</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+        <p>No prediction history available.</p>
+    {% endif %}
+
+    <br>
+    <a href="/" class="history-btn">Back to Prediction</a>
+</div>
+
+</body>
+</html>

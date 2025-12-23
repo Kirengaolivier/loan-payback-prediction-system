@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Payback Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Loan Payback Prediction</h2>
+
+    <form id="predictForm">
+        <input type="number" step="any" name="annual_income" placeholder="Annual Income" required>
+        <input type="number" step="any" name="debt_to_income_ratio" placeholder="Debt-to-Income Ratio" required>
+        <input type="number" name="credit_score" placeholder="Credit Score" required>
+        <input type="number" step="any" name="loan_amount" placeholder="Loan Amount" required>
+        <input type="number" step="any" name="interest_rate" placeholder="Interest Rate" required>
+
+        <select name="gender">
+            <option value="">Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+
+        <select name="marital_status">
+            <option value="">Marital Status</option>
+            <option>Single</option>
+            <option>Married</option>
+            <option>Widowed</option>
+        </select>
+
+        <select name="education_level">
+            <option value="">Education Level</option>
+            <option>High School</option>
+            <option>Master's</option>
+            <option>PhD</option>
+        </select>
+
+        <select name="employment_status">
+            <option value="">Employment Status</option>
+            <option>Employed</option>
+            <option>Self-employed</option>
+            <option>Unemployed</option>
+            <option>Retired</option>
+        </select>
+
+        <select name="loan_purpose">
+            <option value="">Loan Purpose</option>
+            <option>Debt consolidation</option>
+            <option>Education</option>
+            <option>Home</option>
+            <option>Medical</option>
+            <option>Other</option>
+        </select>
+
+        <select name="grade_subgrade">
+            <option value="">Grade</option>
+            <option>A1</option><option>A2</option><option>A3</option>
+            <option>B1</option><option>B2</option><option>B3</option>
+            <option>C1</option><option>C2</option><option>C3</option>
+            <option>D1</option><option>D2</option><option>D3</option>
+            <option>E1</option><option>F1</option>
+        </select>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    <div id="result"></div>
+
+    <a href="/history" class="history-btn">View Prediction History</a>
+    <a href="/batch" class="btn btn-secondary">Upload Batch</a>
+
+</div>
+
+<script>
+document.getElementById("predictForm").onsubmit = async function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    const data = Object.fromEntries(formData.entries());
+
+    const response = await fetch("/predict", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(data)
+    });
+
+    const result = await response.json();
+    document.getElementById("result").innerHTML =
+        `<h3>${result.prediction}</h3>
+         <p>Probability: ${(result.probability * 100).toFixed(2)}%</p>`;
+};
+</script>
+
+</body>
+</html>
