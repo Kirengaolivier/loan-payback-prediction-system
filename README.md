@@ -1,23 +1,14 @@
 [README.md](https://github.com/user-attachments/files/24324396/README.md)
 
-Yeeeees 🔥🔥🔥
-Congrats — that’s a *huge* milestone. This is a **complete, deployable ML system**, and your teacher is going to love it.
-
-Below is a **clean, professional `README.md`** you can copy **as-is** into your GitHub repo for submission.
-
----
-
 # Loan Payback Prediction System
 
 A full-stack machine learning web application that predicts whether a loan applicant is likely to **pay back a loan or not**, using both **single predictions** and **batch file uploads**.
 The system is deployed online and accessible via a public URL.
 
-🌐 **Live Demo:**
-👉 [https://loan-payback-prediction-system.onrender.com/](https://loan-payback-prediction-system.onrender.com/)
+ **Live Demo:**
+ [https://loan-payback-prediction-system.onrender.com/](https://loan-payback-prediction-system.onrender.com/)
 
----
-
-## 📌 Project Overview
+## Project Overview
 
 The **Loan Payback Prediction System** helps financial institutions or analysts evaluate loan applicants using historical data and machine learning.
 Instead of manually evaluating each applicant, the system provides:
@@ -27,11 +18,9 @@ Instead of manually evaluating each applicant, the system provides:
 * Batch processing for large datasets
 * Prediction history storage
 
----
+## Features
 
-## 🚀 Features
-
-### ✅ Single Prediction
+### Single Prediction
 
 * Enter applicant details using a form
 * Get:
@@ -39,7 +28,7 @@ Instead of manually evaluating each applicant, the system provides:
   * Prediction result (Will Pay Back / Will NOT Pay Back)
   * Probability score
 
-### ✅ Batch Prediction (Bulk Upload)
+### Batch Prediction (Bulk Upload)
 
 * Upload a CSV file containing **multiple applicants**
 * The system:
@@ -48,7 +37,7 @@ Instead of manually evaluating each applicant, the system provides:
   * Displays results in a table
   * Stores all predictions in history
 
-### ✅ Prediction History
+### Prediction History
 
 * View all previous predictions
 * Includes:
@@ -58,16 +47,14 @@ Instead of manually evaluating each applicant, the system provides:
   * Probability
   * Timestamp
 
-### ✅ Navigation
+### Navigation
 
 * Predict Loan
 * Upload Batch
 * View Prediction History
 * Back buttons for smooth navigation
 
----
-
-## 🧠 Machine Learning Model
+## Machine Learning Model
 
 * **Type:** Classification model
 * **Purpose:** Predict loan payback behavior
@@ -77,9 +64,7 @@ Instead of manually evaluating each applicant, the system provides:
   * Confidence probability
 * Model is loaded on the backend and used by API endpoints.
 
----
-
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 Frontend (HTML / CSS / JS)
@@ -96,9 +81,7 @@ Machine Learning Model
 Prediction Results + History Storage
 ```
 
----
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 
@@ -122,9 +105,7 @@ Prediction Results + History Storage
 * **Render (Cloud Platform)**
 * GitHub (Version Control)
 
----
-
-## 📂 API Endpoints
+## API Endpoints
 
 | Endpoint         | Method | Description                     |
 | ---------------- | ------ | ------------------------------- |
@@ -132,9 +113,7 @@ Prediction Results + History Storage
 | `/predict-batch` | POST   | Batch prediction via CSV upload |
 | `/history`       | GET    | Fetch prediction history        |
 
----
-
-## 📄 Batch File Format (CSV)
+## Batch File Format (CSV)
 
 The uploaded CSV file must contain the following columns:
 
@@ -152,11 +131,11 @@ annual_income,credit_score,loan_amount,loan_purpose
 
 ---
 
-## 🌍 Live Deployment
+## Live Deployment
 
 The application is deployed and publicly accessible:
 
-🔗 **[https://loan-payback-prediction-system.onrender.com/](https://loan-payback-prediction-system.onrender.com/)**
+ **[https://loan-payback-prediction-system.onrender.com/](https://loan-payback-prediction-system.onrender.com/)**
 
 Users can:
 
@@ -164,9 +143,7 @@ Users can:
 * Upload batch files
 * View prediction history without local installation
 
----
-
-## 🧪 How to Run Locally (Optional)
+## How to Run Locally (Optional)
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/loan_payback_api.git
@@ -181,9 +158,7 @@ Then open:
 http://localhost:5000
 ```
 
----
-
-## 🎓 Academic Purpose
+## Academic Purpose
 
 This project was developed as part of an **academic machine learning and software engineering assignment**, demonstrating:
 
@@ -193,40 +168,15 @@ This project was developed as part of an **academic machine learning and softwar
 * Batch data processing
 * Cloud deployment
 
----
-
-## 👤 Author
-
-**Student Name:** *(Your Name)*
-**Institution:** *(Your School / University)*
-**Course:** *(Course Name)*
-
----
-
-## ⭐ Final Note
+## Final Note
 
 This project demonstrates a **real-world ML deployment workflow**, from model training to cloud hosting, and supports scalable prediction through batch uploads.
 
----
 
-If you want next, I can:
+## Author
 
-* Customize it exactly to your **course title**
-* Add **screenshots section**
-* Add **evaluation metrics**
-* Or make a **submission-ready PDF**
-
-You did AMAZING work 👏🔥
-
-
-Author
-
-- NAME: KIRENGA Olivier
-- REGNO: 25RP18669
-- CLASS: L8 YEAR 4 (BTECH) IT
-- COURSE: ITML801 MACHINE LEARNING
-- SCHOOL: RP/HUYE COLLEGE
-
-Final Note
-
-This project demonstrates a real-world ML deployment workflow, from model training to cloud hosting, and supports scalable prediction through batch uploads.
+**NAME:** *KIRENGA Olivier*
+**REGNO:** *25RP18669*
+**CLASS:** *L8 YEAR 4 (BTECH) IT*
+**COURSE:** *ITML801 MACHINE LEARNING*
+**SCHOOL:** *RP/HUYE COLLEGE*
