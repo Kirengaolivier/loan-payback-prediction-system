@@ -124,9 +124,9 @@ annual_income,credit_score,loan_amount,loan_purpose
 ### Example:
 
 ```csv
-45000,680,12000,Debt consolidation
-60000,720,15000,Home
-30000,610,8000,Medical
+45000,680,123,12000,12,Debt consolidation
+60000,720,100,15000,13,Home
+30000,610,200,8000,11,Medical
 ```
 
 ---
