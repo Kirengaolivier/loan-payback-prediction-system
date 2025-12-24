@@ -1,6 +1,6 @@
 [README.md](https://github.com/user-attachments/files/24324396/README.md)
 
-# Loan Payback Prediction System
+## Loan Payback Prediction System
 
 A full-stack machine learning web application that predicts whether a loan applicant is likely to **pay back a loan or not**, using both **single predictions** and **batch file uploads**.
 The system is deployed online and accessible via a public URL.
@@ -175,8 +175,8 @@ This project demonstrates a **real-world ML deployment workflow**, from model tr
 
 ## Author
 
-**NAME:** *KIRENGA Olivier*
-**REGNO:** *25RP18669*
-**CLASS:** *L8 YEAR 4 (BTECH) IT*
-**COURSE:** *ITML801 MACHINE LEARNING*
-**SCHOOL:** *RP/HUYE COLLEGE*
+- **NAME:** *KIRENGA Olivier*
+- **REGNO:** *25RP18669*
+- **CLASS:** *L8 YEAR 4 (BTECH) IT*
+- **COURSE:** *ITLML801 MACHINE LEARNING*
+- **SCHOOL:** *RP/HUYE COLLEGE*
