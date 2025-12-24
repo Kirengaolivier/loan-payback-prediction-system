@@ -27,36 +27,36 @@ Probability score
 
 - Batch Prediction (Bulk Upload)
 
-Upload a CSV file containing multiple applicants
+Upload a CSV file containing multiple applicants,
 The system:
-Generates predictions for each record
-Displays results in a table
-Stores all predictions in history
+- Generates predictions for each record
+- Displays results in a table
+- Stores all predictions in history
 
 - Prediction History
 
-View all previous predictions
+View all previous predictions,
 Includes:
-Input values
-Prediction result
-Probability
-Timestamp
+- Input values
+- Prediction result
+- Probability
+- Timestamp
 
 - Navigation
 
-Predict Loan
-Upload Batch
-View Prediction History
-Back buttons for smooth navigation
+- Predict Loan
+- Upload Batch
+- View Prediction History
+- Back buttons for smooth navigation
 
 - Machine Learning Model
 
-Type: Classification model
-Purpose: Predict loan payback behavior
+Type: Classification model.
+Purpose: Predict loan payback behavior.
 Outputs:
-Prediction label
-Confidence probability
-Model is loaded on the backend and used by API endpoints.
+- Prediction label
+- Confidence probability
+- Model is loaded on the backend and used by API endpoints.
 
 System Architecture
 
